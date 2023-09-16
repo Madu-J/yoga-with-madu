@@ -64,6 +64,18 @@ nav {
 
 }
 
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
 main {
     /* Make main element take up access space to push footer down */
     flex: 1 0 auto;
