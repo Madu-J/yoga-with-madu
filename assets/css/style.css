@@ -22,6 +22,12 @@ header {
     background-color: orange;
 }
 
+main {
+    /* Make main element take up access space to push footer down */
+    flex: 1 0 auto;
+    margin-top: 47px;
+}
+
 footer {
     background-color: coral;
 }
