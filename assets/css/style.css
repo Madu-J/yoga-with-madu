@@ -161,6 +161,9 @@ video {
 }
 
 /* footer */
+footer {
+    background-color: cadetblue;
+}
 #social-networks {
     text-align: center;
     padding: 20px 0;
@@ -172,7 +175,7 @@ video {
 #social-networks i {
     font-size: 160%;
     padding: 5%;
-    color: #3a3a3a;
+    color: #ffffff;
 }
 
 /* Media query: large or landscape phones (576px and up) */
@@ -215,11 +218,24 @@ video {
         margin: 0 0.5rem;
     }
 
+    h2, h3 {
+        font-size: 200%;
+        margin-top: 80px;
+    }
+
+    
+
+    p {
+        font-size: 160%;
+
+    }
+
         /* Gallery */
-    #photos {
+    #photos img {
         column-count: 3;
         line-height: 0;
         margin-top: 20px;
+
     }
     
         /* Video */
@@ -238,7 +254,7 @@ video {
     }
 
     #signup-form {
-        height: 300px;
+        margin-bottom: 50px;
     }
 
     
