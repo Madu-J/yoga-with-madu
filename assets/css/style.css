@@ -82,6 +82,22 @@ main {
     margin-top: 47px;
     background-color: cadetblue;
 }
+
+ h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 40px;
+}
+
+img {
+    width: 80%;
+    margin: 30px;
+}
+
+p {
+    color: #ffffff;
+    margin: 5%;
+}
  /* Footer */
 footer {
     background-color: #ffffff;
