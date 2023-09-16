@@ -108,6 +108,36 @@ p {
 #about-section p {
 
 }
+
+/* Sign up form section */
+#signup {
+    background-image: url(../images/manonliveyoga.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+}
+
+#signup-form {
+    color: #ffffff;
+    background-color: rgba(30, 40, 30, 0.6);
+    padding: 20%;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.text-input {
+    background: transparent;
+    color: white;
+    width: 80%;
+    height: 20px;
+    margin: 5px 0 20px 0;
+    border: 1px solid cadetblue;
+    border-radius: 2px;
+    padding: 0 5px;
+
+}
  /* Footer */
 footer {
     background-color: #ffffff;
