@@ -89,24 +89,22 @@ main {
     margin-top: 30px;
 }
 
-img {
-    width: 80%;
-    margin: 30px;
-}
-
 p {
     color: #ffffff;
-    margin: 5%;
 }
+
+/* Flex box */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
 
 /* About section */
 #about-section h2 {
     text-align: center;
     margin-top: 20px;
-}
-
-#about-section p {
-
 }
 
 /* Sign up form section */
@@ -138,7 +136,8 @@ p {
     padding: 0 5px;
 
 }
- /* Footer */
+
+/* Footer */
 footer {
     background-color: #ffffff;
 }
@@ -155,4 +154,33 @@ footer {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
+}
+
+​ @media screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    #image-text,
+    #image-text-2,
+    #image-text-3 {
+        width: 100%;
+    }
+
+    ​#image-1,
+    #image-2,
+    #image-3,
+    #image-4,
+    #image-5 {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    #image-1 img,
+    #image-2 img,
+    #image-3 img,
+    #image-4 img {
+        max-width: 100%;
+    }
 }
