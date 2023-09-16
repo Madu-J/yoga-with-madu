@@ -83,10 +83,10 @@ main {
     background-color: cadetblue;
 }
 
- h2 {
+ h2, h3 {
     text-align: center;
     color: #ffffff;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 img {
@@ -97,6 +97,16 @@ img {
 p {
     color: #ffffff;
     margin: 5%;
+}
+
+/* About section */
+#about-section h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#about-section p {
+
 }
  /* Footer */
 footer {
