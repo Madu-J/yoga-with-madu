@@ -10,17 +10,17 @@
 }
 
 /* Style general body */
+
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     color: #3a3a3a;
-    font-size: 'Lato', sans-serif;
-
+    font-family: 'Lato', sans-serif;
 }
-
 header {
     background-color: #ffffff;
+    /* To prevent the text from sticking to the side of the screen */
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -29,18 +29,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+
 }
 
 header a {
     text-decoration: none;
     color: inherit;
+    letter-spacing: 2px;
+    color: #252522;
 }
 
 h1 {
     font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
 }
 
 #menu {
@@ -57,7 +57,6 @@ h1 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* Navbar */
 nav {
     position: absolute;
     background-color: #ffffff;
@@ -81,20 +80,112 @@ nav {
 .nav-toggle-label {
     font-size: 2rem;
 }
-
 main {
     background-color: cadetblue;
+    color: #ffffff;
     flex: 1 0 auto;
     margin-top: 47px;
 }
 
-footer {
-    background-color: white;
+h2 {
+    margin: 0 1.5rem;
+    margin-top: 20px;
+}
+
+img {
+    width: 80%;
+    margin: 30px;
+}
+
+p {
+    text-align: center;
+    padding: 0 1rem;
+}
+
+/* About section */
+#about-section h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#about-section p {
+    font-size: large;
+    text-align: left;
+    margin: 15px;
+}
+
+/* Gallery */
+#photos {
+    line-height: 0;
+    margin-top: 20px;
+}
+
+/* Video */
+video {
+    width: 80%;
+    margin: 12px;
+
+}
+
+
+/* Form */
+#signup {
+    background-image: url(../images/manonliveyoga.jpg);
+    height: 500px;
+    width: 80%;
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+    margin: 30px;
+}
+
+#signup-form {
+    color: #fff;
+    background-color: rgba(30, 40, 30, 0.6);
+    height: 300px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.text-input {
+    background: transparent;
+    color: #ffffff;
+    width: 80%;
+    height: 20px;
+    margin: 5px 0 20px 0;
+    border: 1px solid cadetblue;
+    border-radius: 2px;
+    padding: 0 5px;
+
+}
+
+/* footer */
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
 }
 
 /* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
 
+    /* Video */
+    #yoga-clips {
+        column-gap: 0;
+    }
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -105,34 +196,58 @@ footer {
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
-    }
 
+    }
     #menu {
         display: flex;
     }
 
-    #menu>li {
+    #menu > li {
         padding-left: 1rem;
     }
+    .nav-toggle-label {
+        display: none;
+    }
 
-   .nav-toggle-label {
-    display: none;
-   }
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
 
-   #logo {
-    font-size: 280%;
-    line-height: 75px;
-    margin: 0 0.5rem;
-   }
-/* Push main content down */
-   main {
-    margin-top: 79px;
-   }
+        /* Gallery */
+    #photos {
+        column-count: 3;
+        line-height: 0;
+        margin-top: 20px;
+    }
+    
+        /* Video */
+    video {
+        width: 95%;
+        
+    
+    }
+
+        /* Form */
+    #signup {
+        width: 68%;
+        left: 9.5%;
+        padding: 75px;
+        position: relative;
+    }
+
+    #signup-form {
+        height: 300px;
+    }
+
+    
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 1200px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+
     }
 }
