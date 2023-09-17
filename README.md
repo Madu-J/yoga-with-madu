@@ -52,6 +52,7 @@ All pages contain a footer Element with social media icons for any user that wan
 
 The signup page will have form for users who wants to join yoga class. This is to fulfil the sole purpose of user story:
 | As a first-time user I found the site interested and want to join yoga class
+![Form](assets/images/form.png)
 
 | As a returning user I want to join the yoga class.
 
