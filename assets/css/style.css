@@ -18,6 +18,13 @@ body {
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: #3a3a3a;
+}
 header {
     background-color: #ffffff;
     /* To prevent the text from sticking to the side of the screen */
@@ -36,13 +43,7 @@ header a {
     text-decoration: none;
     color: inherit;
     letter-spacing: 2px;
-    color: #252522;
 }
-
-h1 {
-    font-family: 'Oswald', sans-serif;
-}
-
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -100,6 +101,7 @@ img {
 p {
     text-align: center;
     padding: 0 1rem;
+    letter-spacing: 2px;
 }
 
 /* About section */
@@ -138,6 +140,7 @@ video {
     padding: 20px 10% 0 10%;
     flex-grow: 1;
     margin: 30px;
+    margin-top: 50px;
 }
 
 #signup-form {
@@ -146,6 +149,11 @@ video {
     height: 300px;
     padding: 20px;
     margin-top: 30px;
+}
+
+#submit {
+    width: 60%;
+    
 }
 
 .text-input {
@@ -184,11 +192,6 @@ footer {
         column-count: 2;
         column-gap: 0;
     }
-
-    /* Video */
-    #yoga-clips {
-        column-gap: 0;
-    }
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -223,11 +226,17 @@ footer {
         margin-top: 80px;
     }
 
-    
-
     p {
         font-size: 160%;
 
+    }
+
+    #about-section h2 {
+        margin-top: 60px;
+    }
+
+    #about-section p {
+        font-size: 25px;
     }
 
         /* Gallery */
@@ -247,14 +256,31 @@ footer {
 
         /* Form */
     #signup {
-        width: 68%;
+        width: 78%;
         left: 9.5%;
         padding: 75px;
         position: relative;
+        top: 60px;
+    }
+
+    #signup h2 {
+        font-size: 50px;
+        margin: 40px;
     }
 
     #signup-form {
         margin-bottom: 50px;
+    }
+
+    .text-input {
+        width: 50%;
+        height: 50px;
+    }
+
+    #submit {
+        font-size: 150%;
+        width: 50%;
+        height: 50px;
     }
 
     
@@ -303,7 +329,15 @@ footer {
 
     #second-section img {
         float: right;
-        bottom: 1100px;
+        bottom: 1150px;
+    }
+
+    #third-image img {
+        width: 80%;
+        left: 8%;
+        bottom: 320px;
+
+        
     }
 
     #about-section {
@@ -311,7 +345,7 @@ footer {
     }
 
     #about-section > h2, #about-section > h3 {
-        font-size: 50px;
+        font-size: 90px;
         margin-top: 50px;
     }
     #about-section > p {
@@ -340,4 +374,13 @@ footer {
         width: 20%;
         margin: 15px;
         }
+
+        #signup h2 {
+            font-size: 250%;
+            margin: 30px;
+        }
+
+    .text-input {
+        width: 100%;
+    }
 }
