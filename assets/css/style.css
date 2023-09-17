@@ -81,7 +81,7 @@ nav {
     font-size: 2rem;
 }
 main {
-    background-color: cadetblue;
+    background-color: rgb(4, 41, 20);
     color: #ffffff;
     flex: 1 0 auto;
     margin-top: 47px;
@@ -162,7 +162,7 @@ video {
 
 /* footer */
 footer {
-    background-color: cadetblue;
+    background-color: #ffffff;
 }
 #social-networks {
     text-align: center;
@@ -175,7 +175,7 @@ footer {
 #social-networks i {
     font-size: 160%;
     padding: 5%;
-    color: #ffffff;
+    color: #3a3a3a;
 }
 
 /* Media query: large or landscape phones (576px and up) */
@@ -266,4 +266,78 @@ footer {
         border-bottom: 1px solid #3a3a3a;
 
     }
+
+    #first-section > h2 {
+        font-size: 400%;
+        padding-left: 33%;
+    }
+
+    img {
+        width: 60vh;
+    }
+
+    p, img {
+        position: relative;
+    }
+
+    #first-section p {
+        font-size: 200%;
+        text-align: center;
+        width: 30%;
+        margin-left: 35%;
+        bottom: 450px;
+    }
+
+    #second-section > h2 {
+        font-size: 300%;
+        position: relative;
+        bottom: 430px;
+        left: 320px;
+    }
+
+    #second-section p {
+        bottom: 400px;
+        width: 100%;
+        left: 280px;
+    }
+
+    #second-section img {
+        float: right;
+        bottom: 1100px;
+    }
+
+    #about-section {
+        width: 90%;
+    }
+
+    #about-section > h2, #about-section > h3 {
+        font-size: 50px;
+        margin-top: 50px;
+    }
+    #about-section > p {
+        font-size: 200%;
+        margin-left: 140px;
+    }
+
+        #photos {
+            width: 98%;
+            column-count: 3;
+            margin-top: 60px;
+            margin-left: 50px;
+        }
+
+        video {
+            width: 25%;
+            margin-left: 110px;
+        }
+
+    #signup {
+        margin-top: 60px;
+        margin-left: 90px;
+        }
+    
+    #signup-form {
+        width: 20%;
+        margin: 15px;
+        }
 }
